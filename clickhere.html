@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Form</title>
+  <title>Forms</title>
  </head>
  <body>
  <p>You may fill up the form for further updates</p>
- <input type=
+ <input type="text" placeholder="username" maxlength="20"/><br/><br/>
+ DOB:<input type="date" min="2000-01-01"/><br/><br/>
+ GENDER:
+ Male:<input type="radio" name=" Gender" value="male"/>
+ Female:<input type="radio" name=" Gender" value="female"/>
+ Others:<input type="radio" name=" Gender" value="others"/>
+ <textarea rows="5" placeholder="Address"></textarea><br/><br/>
+ State:
+ <select>
+    <option>Kerala</option>
+    <option>Karnataka</option>
+    <option>Tamilnadu</option>
+    <option>Goa</option>
+ <select><br/><br/>
+ District:
+  <input list="districts" name="district"/>
+  <datalist id="districts">
+    <option value="Kasargod"/>
